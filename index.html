@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- для отображения иконок подключаем шрифты
+онлайн -->
+<link href="https://fonts.googleapis.com/
+icon?family=Material+Icons"
+rel="stylesheet">
+<!-- подключение стилевого файла фреймворка
+Materialize -->
+<link type="text/css"
+rel="stylesheet"
+href="css/materialize.min.css"
+media="screen,projection"/>
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <h2 class="yellow lighten-3 purple-text text-accent-4">
+        Background-color & Color
+        </h2>
+        <button class="btn red darken-5 green-text
+text-accent-3">
+Accent button
+</button>
+<p class="red lighten-5 green-text text-darken-4">
+    Lorem ipsum dolor sit amet, consectetur
+    adipisicing elit. Placeat at voluptatem
+    laboriosam eveniet quos nisi impedit accusamus,
+    consequuntur eaque. Eum dolorem animi ratione.
+    Numquam, vel! Ab ex est ut sunt!
+    </p>
+    <div class="container">
+        <div class="row">
+        <div class="blue lighten-2 col s1 ">1</div>
+        <div class="red lighten-2 col s1 offset-s1">2</div>
+        <div class="red lighten-2 col s1">3</div>
+        <div class="red lighten-2 col s1">4</div>
+        <div class="red lighten-2 col s1">5</div>
+<div class="red lighten-2 col s1">6</div>
+<div class="red lighten-2 col s1">7</div>
+<div class="red lighten-2 col s1">8</div>
+<div class="red lighten-2 col s1">9</div>
+<div class="red lighten-2 col s1">10</div>
+<div class="red lighten-2 col s1">11</div>
+<div class="red lighten-2 col s1">12</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="red col  s12  m6 l3 xl2">1</div>
+<div class="lime col s12 m6 l3 xl4 offset-xl2">2</div>
+<div class="teal col s12 m6 l3 xl4">3</div>
+<div class="pink col s12 m6 l3 xl2">4</div>
+</div>
+<div class="row blue-grey valign-wrapper hoverable"
+style="height: 150px;">
+<h5 class="col s12 center-align show-on-small
+hide-on-med-and-up">
+center vertically aligned
+</h5>
+<p class="col s6 offset-s3 truncate
+hide-on-small-only">
+Lorem ipsum dolor sit amet consectetur
+adipisicing elit. Veritatis illo assumenda
+quidem sint distinctio, reprehenderit nihil
+maiores earum voluptatibus voluptate cum
+libero impedit sit eos rerum dolorum
+reiciendis aut vitae.
+</p>
+</div>
+<!-- добавляем элемент навигации с серо-голубым фоном -->
+<nav class="blue-grey">
+    <!-- добавляем контейнер для основного меню,
+    которое будет отображаться на всех представлениях,
+    кроме мобильного и планшетного-->
+    <div class="nav-wrapper">
+    <!-- добавляем логотип -->
+    <a href="#!" class="brand-logo">Logo</a>
+    <!-- добавляем элемент с иконкой,
+    по нажатию на которую, слева будет
+    выезжать меню на планшетных и мобильных
+отображениях -->
+<!-- для осуществления связи между
+ссылкой и скрываемым меню, необходимо
+добавить ссылке атрибут data-target -->
+<a href="#"
+data-target="mobile-left"
+class="sidenav-trigger">
+<i class="material-icons">menu</i>
+</a>
+<!--меню со страницами, с выравниванием
+по правому краю-->
+<ul class="right hide-on-med-and-down">
+<li><a href="">Page 1</a></li>
+<li><a href="">Page 2</a></li>
+<li><a href="">Page 3</a></li>
+<li><a href="">Page 4</a></li>
+</ul>
+</div>
+</nav>
+<!-- меню со страницами, которое будет выезжать
+слева на мобильном и планшетном представлении -->
+<!-- для осуществления связи между ссылкой
+и скрываемым меню, необходимо добавить меню
+идентификатор с таким же значением, как
+у атрибута data-target у ссылки-->
+<ul class="sidenav" id="mobile-left">
+<li><a href="">Page 1</a></li>
+<li><a href="">Page 2</a></li>
+<li><a href="">Page 3</a></li>
+<li><a href="">Page 4</a></li>
+</ul>
+<!-- здесь будет код страницы -->
+<!--подключение скриптового файла фреймворка
+Materialize-->
+<script type="text/javascript"
+src="js/materialize.min.js"></script>
+<script>
+    //дожидаемся загрузки страницы
+    document.addEventListener('DOMContentLoaded',
+    function() {
+    //переменная для элемента с классом sidenav
+    var elems = document.querySelectorAll('.sidenav');
+    //инициализируем плагин Sidenav для
+    //мобильного меню
+    var instances = M.Sidenav.init(elems);
+    });
+    </script>
+</body>
+</html>
